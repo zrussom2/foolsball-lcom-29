@@ -498,6 +498,29 @@ tbody tr:hover {
     font-weight: 700;
 }
 
+.rank-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 58px;
+}
+
+.rank-movement {
+    min-width: 17px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.movement-up {
+    color: #18794e;
+}
+
+.movement-down {
+    color: var(--red);
+}
+
 .player-name {
     font-size: 1rem;
     font-weight: 600;
@@ -639,6 +662,41 @@ tbody tr:hover {
     font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.summary-badges {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ball-hog-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 28px;
+    padding: 5px 10px;
+    color: white;
+    background: var(--red);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    line-height: 1;
+}
+
+.ball-hog-badge strong {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.ball-hog-badge span {
+    padding-left: 9px;
+    border-left: 1px solid rgba(255, 255, 255, 0.35);
+    font-size: 0.66rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .position-badge {
@@ -980,6 +1038,21 @@ footer p {
     .summary-title-row {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .summary-badges {
+        justify-content: flex-start;
+    }
+
+    .ball-hog-badge {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ball-hog-badge span {
+        padding-left: 0;
+        border-left: 0;
+        white-space: normal;
     }
 
     .summary-lead {
