@@ -1,0 +1,2877 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="60">
+    <meta name="theme-color" content="#12372a">
+    <title>FOOLSball - LCOM '29</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/app.js" defer></script>
+</head>
+<body>
+    <header class="scoreboard-header">
+        <div class="pitch-lines" aria-hidden="true">
+            <span class="center-line"></span>
+            <span class="center-circle"></span>
+        </div>
+        <div class="header-content">
+            <div class="brand-lockup">
+                <span class="brand-mark" aria-hidden="true"><span></span></span>
+                <div>
+                    <p class="season">LCOM Class of 2029</p>
+                    <h1>FOOLS<span>ball</span></h1>
+                </div>
+            </div>
+            <div class="update-status">
+                <span class="live-dot" aria-hidden="true"></span>
+                <div>
+                    <span>Last Updated</span>
+                    <time datetime="2026-09-18T14:37:34.769320-04:00">
+                        Sep 18, 2026 at 02:37 PM
+                    </time>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="standings-section" aria-labelledby="standings-title">
+            <div class="section-heading">
+                <div>
+                    <p class="kicker">The leaderboard</p>
+                    <h2 id="standings-title">Current Standings</h2>
+                </div>
+                <p class="player-count">33 active players</p>
+            </div>
+
+            <div class="standings-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Player</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        
+                        <tr class="standing-row podium podium-1">
+                            <td data-label="Rank">
+                                <span class="rank-number">1</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-1"
+                                    data-player-toggle
+                                >
+                                    <span>Andrew</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">350.7</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-1" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>15% O / 85% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>17-10</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>63.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, L, W, W, W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>6 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Daniel <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Alannah <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Zain (TZ) <small>1-5</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“4 wins in the last 5; subtle momentum is no longer subtle.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row podium podium-2">
+                            <td data-label="Rank">
+                                <span class="rank-number">2</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-2"
+                                    data-player-toggle
+                                >
+                                    <span>Zane (BZ)</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">241.9</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-2" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>22% O / 78% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>12-6</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>66.7%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L, L, W, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>6 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Andrew <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Alannah <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Daniel <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“The 10-9 ledger reads 3-1 across 4 thrillers. Calm was never invited.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row podium podium-3">
+                            <td data-label="Rank">
+                                <span class="rank-number">3</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-3"
+                                    data-player-toggle
+                                >
+                                    <span>Daniel</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">187.0</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-3" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>85% O / 15% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>14-6</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>70.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, W, W, W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>6 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>James <small>3-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Billy <small>6-2</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Calum <small>1-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Favorite matchup: Billy, with a 6-2 advantage. Subtle dominance denied.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">4</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-4"
+                                    data-player-toggle
+                                >
+                                    <span>Zain (TZ)</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">181.2</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-4" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>20% O / 80% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>10-5</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>66.7%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, L, W, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>3 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Andrew <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Andrew <small>5-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Adam <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“That season-best 3-game winning streak was not especially polite.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">5</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-5"
+                                    data-player-toggle
+                                >
+                                    <span>James</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">151.2</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-5" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>12% O / 88% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>10-7</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>58.8%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, L, W, L, W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>3 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Daniel <small>3-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Billy <small>6-3</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Gabby L <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Winning margins average 4.4 goals. The scoreboard usually gets the message.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">6</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-6"
+                                    data-player-toggle
+                                >
+                                    <span>Billy</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">138.7</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-6" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>35% O / 65% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>11-15</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>42.3%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L, L, L, L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>4 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Donian <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Calum <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Daniel <small>2-6</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“5 consecutive losses; the table keeps receipts.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">7</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-7"
+                                    data-player-toggle
+                                >
+                                    <span>Michael V</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">123.7</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-7" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>91% O / 9% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>11-12</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>47.8%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, L, L, L, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>4 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>James <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Alannah <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Adam <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“The latest 5 produced a 1-4 record. Form has left the chat.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">8</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-8"
+                                    data-player-toggle
+                                >
+                                    <span>Stephanie</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">100.3</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-8" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>50% O / 50% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>2-0</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>100.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 2</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Brian <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Brian <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Brian <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“2 appearances and counting. Apparently the table has office hours.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">9</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-9"
+                                    data-player-toggle
+                                >
+                                    <span>Adam</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">98.6</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-9" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>100% O / 0% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>3-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>75.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 4</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, L, W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Andrew <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Michael V <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Anthony <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“The résumé includes 1 win by at least seven. Loud work.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">10</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-10"
+                                    data-player-toggle
+                                >
+                                    <span>Donian</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">86.9</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-10" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>27% O / 73% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>6-5</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>54.5%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, L, L, W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Billy <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Brian <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Andrew <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“The average defeat margin is 4.4. Some endings need editing.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">11</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-11"
+                                    data-player-toggle
+                                >
+                                    <span>Emily</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">83.9</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-11" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>0% O / 100% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>2-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>66.7%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 3</span>
+                                            <div class="form-marks" aria-label="Recent form: L, W, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Morgan <small>2-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Abby <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Donian <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Patrols defense in 100% of games. Crossing midfield remains optional.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">12</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-12"
+                                    data-player-toggle
+                                >
+                                    <span>Matthew</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">78.7</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-12" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>67% O / 33% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>3-0</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>100.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 3</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>3 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Zane (BZ) <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Billy <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Alannah <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“3 consecutive wins; the table keeps receipts.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">13</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-13"
+                                    data-player-toggle
+                                >
+                                    <span>Meelad</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">74.6</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-13" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>75% O / 25% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>3-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>75.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 4</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, W, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>3 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Billy <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Anthony <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Billy <small>1-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Winning 75% of the time. Lunch has become a business trip.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">14</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-14"
+                                    data-player-toggle
+                                >
+                                    <span>Tim</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">73.0</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-14" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>50% O / 50% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>50.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 2</span>
+                                            <div class="form-marks" aria-label="Recent form: W, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Daniel <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Antonia <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Brian <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Officially a midfielder: 50% offense, 50% defense, 100% noncommittal.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">15</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-15"
+                                    data-player-toggle
+                                >
+                                    <span>Yoona</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">68.7</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-15" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>100% O / 0% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>5-7</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>41.7%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, W, W, L, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Billy <small>2-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Anthony <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Thomas <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Form shifted up: 29% wins before, 60% across the last five.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">16</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-16"
+                                    data-player-toggle
+                                >
+                                    <span>Francesca</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">65.1</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-16" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>100% O / 0% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-0</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>100.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 1</span>
+                                            <div class="form-marks" aria-label="Recent form: W">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Daron <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Claire <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Claire <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“An 100% offense rate says waiting around was never really the plan.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">17</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-17"
+                                    data-player-toggle
+                                >
+                                    <span>Calum</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">62.5</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-17" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>40% O / 60% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>4-6</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>40.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L, L, W, L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>3 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Michael Mo <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Chris <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Billy <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Form shifted down: 60% wins before, 20% across the last five.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">18</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-18"
+                                    data-player-toggle
+                                >
+                                    <span>Thomas</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">46.4</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-18" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>70% O / 30% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>4-6</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>40.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, L, W, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Daniel <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Alannah <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Andrew <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“The Andrew matchup is 0-2. Avoid eye contact at the table.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">19</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-19"
+                                    data-player-toggle
+                                >
+                                    <span>Gabby L</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">44.4</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-19" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>75% O / 25% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>2-2</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>50.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 4</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, L, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Andrew <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Donian <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Emily <small>1-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“On the wrong side, the gap averages 4.0 goals. The tape has notes.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">20</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-20"
+                                    data-player-toggle
+                                >
+                                    <span>Daron</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">42.5</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-20" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>0% O / 100% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>50.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 2</span>
+                                            <div class="form-marks" aria-label="Recent form: L, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Francesca <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Claire <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Andrew <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“100% defense usage. Someone has clearly claimed the back line.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">21</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-21"
+                                    data-player-toggle
+                                >
+                                    <span>Morgan</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">41.6</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-21" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>100% O / 0% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>2-3</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>40.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, W, W, L, L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Emily <small>2-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Abby <small>2-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Michael V <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Abby has seen this movie 2 times; it ends 2-0 here.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">22</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-22"
+                                    data-player-toggle
+                                >
+                                    <span>Corina</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">40.9</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-22" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>50% O / 50% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>2-2</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>50.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 4</span>
+                                            <div class="form-marks" aria-label="Recent form: W, W, L, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>2 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Chris <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Chris <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Alannah <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“The season includes 2 seven-plus goal losses. Growth opportunity located.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">23</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-23"
+                                    data-player-toggle
+                                >
+                                    <span>Brian</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">33.8</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-23" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>100% O / 0% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-2</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>33.3%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 3</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Stephanie <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Tim <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Donian <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Has absorbed 1 loss by seven-plus goals. Delete the footage.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">24</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-24"
+                                    data-player-toggle
+                                >
+                                    <span>Niki</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">33.3</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-24" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>100% O / 0% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-2</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>33.3%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 3</span>
+                                            <div class="form-marks" aria-label="Recent form: W, L, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Zain (TZ) <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Andrew <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Billy <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Make it 2 losses in a row. Film does not lie.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">25</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-25"
+                                    data-player-toggle
+                                >
+                                    <span>Michael Mo</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">19.6</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-25" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>50% O / 50% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>2-4</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>33.3%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, W, L, L, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Andrew <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Michael V <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Andrew <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Wins come by 1.5 goals on average. Apparently comfort is allowed.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">26</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-26"
+                                    data-player-toggle
+                                >
+                                    <span>Abby</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">14.7</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-26" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>50% O / 50% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>0-2</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>0.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 2</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>0 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Gabby L <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Emily <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Emily <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Alongside Gabby L: 0 wins, 2 losses, minimal supervision required.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">27</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-27"
+                                    data-player-toggle
+                                >
+                                    <span>Claire</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">7.3</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-27" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>0% O / 100% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>0-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>0.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 1</span>
+                                            <div class="form-marks" aria-label="Recent form: L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>0 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Michael V <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Daron <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Daron <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Already logged 1 games. Availability remains an elite trait.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">28</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-28"
+                                    data-player-toggle
+                                >
+                                    <span>Antonia</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">5.8</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-28" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>0% O / 100% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>0-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>0.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 1</span>
+                                            <div class="form-marks" aria-label="Recent form: L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>0 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Thomas <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Daniel <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Daniel <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Sets up on defense 100% of the time and lets the chaos come to them.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">29</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-29"
+                                    data-player-toggle
+                                >
+                                    <span>Paddy</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">5.8</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-29" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>0% O / 100% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>0-1</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>0.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 1</span>
+                                            <div class="form-marks" aria-label="Recent form: L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>0 wins</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Chris <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Andrew <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Andrew <small>0-1</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Game number 1 is in the books. The attendance record is thriving.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">30</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-30"
+                                    data-player-toggle
+                                >
+                                    <span>Anthony</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">2.3</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-30" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Defense</strong>
+                                            <span>0% O / 100% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-4</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>20.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L, L, L, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Daniel <small>1-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Adam <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Daniel <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“4 losses through 5 games. Plenty of tape to study.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">31</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-31"
+                                    data-player-toggle
+                                >
+                                    <span>Alannah</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">0.0</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-31" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>78% O / 22% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-8</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>11.1%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L, L, L, L">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Zane (BZ) <small>1-1</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Corina <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Andrew <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“A 1-8 record. The film session may require snacks.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">32</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-32"
+                                    data-player-toggle
+                                >
+                                    <span>Chris</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">0.0</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-32" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Midfielder</strong>
+                                            <span>50% O / 50% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-7</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>12.5%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: W, L, L, L, L">
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Corina <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Rae <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Andrew <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Dropped 4 of the last 5. Momentum took a personal day.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr class="standing-row ">
+                            <td data-label="Rank">
+                                <span class="rank-number">33</span>
+                            </td>
+                            <td data-label="Player" class="player-name">
+                                <button
+                                    class="player-toggle"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="player-summary-33"
+                                    data-player-toggle
+                                >
+                                    <span>Hamza</span>
+                                    <span class="expand-icon" aria-hidden="true"></span>
+                                </button>
+                            </td>
+                            <td data-label="Points" class="points">0.0</td>
+                        </tr>
+                        <tr class="summary-row" id="player-summary-33" hidden>
+                            <td colspan="3">
+                                <div class="player-summary">
+                                    <div class="summary-title-row">
+                                        <p class="summary-eyebrow">Season at a glance</p>
+                                        <div class="position-badge">
+                                            <strong>Offense</strong>
+                                            <span>80% O / 20% D</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary-lead">
+                                        <div class="lead-stat">
+                                            <span>Record</span>
+                                            <strong>1-4</strong>
+                                        </div>
+                                        <div class="lead-stat">
+                                            <span>Win rate</span>
+                                            <strong>20.0%</strong>
+                                        </div>
+                                        <div class="form-stat">
+                                            <span>Last 5</span>
+                                            <div class="form-marks" aria-label="Recent form: L, L, L, L, W">
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-l">L</b>
+                                                
+                                                <b class="form-w">W</b>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary-grid">
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-fire" aria-hidden="true"></span>
+                                            <div><span>Best streak</span><strong>1 win</strong></div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-partner" aria-hidden="true"></span>
+                                            <div><span>Best partner</span>
+                                                <strong>Andrew <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-up" aria-hidden="true"></span>
+                                            <div><span>Strongest matchup</span>
+                                                <strong>Alannah <small>1-0</small></strong>
+                                            </div>
+                                        </div>
+                                        <div class="summary-stat">
+                                            <span class="stat-symbol symbol-down" aria-hidden="true"></span>
+                                            <div><span>Worst matchup</span>
+                                                <strong>Michael V <small>0-2</small></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <blockquote>“Nemesis report: Michael V, with a 0-2 record. The scouting file is open.”</blockquote>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <aside class="donut-drawer" data-donut-drawer>
+                <button
+                    class="donut-tab"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="donut-panel"
+                    data-donut-toggle
+                >
+                    <span aria-hidden="true">🍩</span>
+                    <span>Donut Counter</span>
+                </button>
+                <section class="donut-panel" id="donut-panel" aria-hidden="true">
+                    <header class="donut-header">
+                        <div>
+                            <p>Zero points. One pastry.</p>
+                            <h3>🍩 Donut Counter</h3>
+                        </div>
+                        <button class="donut-close" type="button" aria-label="Close donut counter" data-donut-close>
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </header>
+                    <p class="donut-total">
+                        <strong>4</strong>
+                        donuts served this season
+                    </p>
+                    
+                    <ol class="donut-list">
+                        
+                        <li>
+                            <div>
+                                <strong>Alannah</strong>
+                                <span>One trip to the bakery</span>
+                            </div>
+                            <small>Tied</small>
+                            <b aria-label="1 donut">×1</b>
+                        </li>
+                        
+                        <li>
+                            <div>
+                                <strong>Donian</strong>
+                                <span>One trip to the bakery</span>
+                            </div>
+                            <small>Tied</small>
+                            <b aria-label="1 donut">×1</b>
+                        </li>
+                        
+                        <li>
+                            <div>
+                                <strong>Michael V</strong>
+                                <span>One trip to the bakery</span>
+                            </div>
+                            <small>Tied</small>
+                            <b aria-label="1 donut">×1</b>
+                        </li>
+                        
+                        <li>
+                            <div>
+                                <strong>Zain (TZ)</strong>
+                                <span>One trip to the bakery</span>
+                            </div>
+                            <small>Tied</small>
+                            <b aria-label="1 donut">×1</b>
+                        </li>
+                        
+                    </ol>
+                    
+                </section>
+            </aside>
+        </section>
+
+        <section class="commentary-section" aria-labelledby="commentary-title">
+            <div class="section-heading commentary-heading">
+                <div>
+                    <p class="kicker">Straight from the scorebook</p>
+                    <h2 id="commentary-title">Around the Table</h2>
+                </div>
+                <span class="ball-mark" aria-hidden="true"></span>
+            </div>
+            <div class="comment-grid">
+                
+                <article class="comment-card">
+                    <p>Hot hand</p>
+                    <h3>Zane (BZ) stacked 6 straight wins at one point. Apparently losing was not on the calendar.</h3>
+                    <span class="comment-number" aria-hidden="true">01</span>
+                </article>
+                
+                <article class="comment-card">
+                    <p>No mercy</p>
+                    <h3>Michael V and Thomas handed Alannah and Donian the biggest blowout, 10-0.</h3>
+                    <span class="comment-number" aria-hidden="true">02</span>
+                </article>
+                
+                <article class="comment-card">
+                    <p>Dynamic duo</p>
+                    <h3>Daniel and James are 3-0 together. Team chemistry, or a very effective group project.</h3>
+                    <span class="comment-number" aria-hidden="true">03</span>
+                </article>
+                
+                <article class="comment-card">
+                    <p>Matchup problem</p>
+                    <h3>Daniel owns a 6-2 edge over Billy. At this point, it may be personal.</h3>
+                    <span class="comment-number" aria-hidden="true">04</span>
+                </article>
+                
+                <article class="comment-card">
+                    <p>Cardiac club</p>
+                    <h3>13 games finished 10-9. Nothing builds class unity like collective stress.</h3>
+                    <span class="comment-number" aria-hidden="true">05</span>
+                </article>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>LCOM '29 Foosball</p>
+        <p>Standings refresh automatically from the league workbook.</p>
+    </footer>
+</body>
+</html>
