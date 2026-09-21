@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/styles.css?v=20260921-1">
-    <script src="static/app.js?v=20260921-1" defer></script>
+    <link rel="stylesheet" href="static/styles.css?v=20260921-2">
+    <script src="static/app.js?v=20260921-2" defer></script>
 </head>
 <body>
     <header class="scoreboard-header">
@@ -87,16 +87,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-1"
-                                    data-player-toggle
-                                >
-                                    <span>Zane (BZ)</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-1"
+                                        data-player-toggle
+                                    >
+                                        <span>Zane (BZ)</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">407.1</td>
                         </tr>
@@ -106,7 +111,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>26% O / 74% D</span>
@@ -177,16 +184,30 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-2"
-                                    data-player-toggle
-                                >
-                                    <span>Andrew</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-2"
+                                        data-player-toggle
+                                    >
+                                        <span>Andrew</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-2-1" data-achievement-badge>
+                                            <span aria-hidden="true">🧹</span>
+                                            <span class="achievement-tooltip" id="badge-2-1" role="tooltip">
+                                                <strong>No mercy</strong>
+                                                <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                <b>Largest result: 10-0</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">369.7</td>
                         </tr>
@@ -196,12 +217,18 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
-                                            <div class="ball-hog-badge" aria-label="Ball Hog designation">
-                                                <strong>🐷 Ball Hog</strong>
-                                                <span>29 games · league average 9.6</span>
-                                            </div>
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-2-1" data-achievement-badge>
+                                                    <span aria-hidden="true">🧹</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-2-1" role="tooltip">
+                                                        <strong>No mercy</strong>
+                                                        <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                        <b>Largest result: 10-0</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>17% O / 83% D</span>
@@ -258,7 +285,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <blockquote>“Andrew is a BALL HOG with 29 games; the active-player league average is 9.6 and the threshold is 27.1. The ball has learned to run faster than any other equipment in the room.”</blockquote>
+                                    <blockquote>“The high-water mark is 6 wins in a row. Very normal behavior.”</blockquote>
                                 </div>
                             </td>
                         </tr>
@@ -277,16 +304,39 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-3"
-                                    data-player-toggle
-                                >
-                                    <span>Daniel</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-3"
+                                        data-player-toggle
+                                    >
+                                        <span>Daniel</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-3-1" data-achievement-badge>
+                                            <span aria-hidden="true">😈</span>
+                                            <span class="achievement-tooltip" id="badge-3-1" role="tooltip">
+                                                <strong>Matchup problem</strong>
+                                                <span>Owns the league&#39;s most lopsided qualifying matchup against Billy.</span>
+                                                <b>Leads 7-2 head-to-head</b>
+                                            </span>
+                                        </button>
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-3-2" data-achievement-badge>
+                                            <span aria-hidden="true">💀</span>
+                                            <span class="achievement-tooltip" id="badge-3-2" role="tooltip">
+                                                <strong>Public enemy</strong>
+                                                <span>Has defeated the widest variety of opponents.</span>
+                                                <b>18 different opponents beaten</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">331.3</td>
                         </tr>
@@ -296,12 +346,27 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
-                                            <div class="ball-hog-badge" aria-label="Ball Hog designation">
-                                                <strong>🐷 Ball Hog</strong>
-                                                <span>29 games · league average 9.6</span>
-                                            </div>
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-3-1" data-achievement-badge>
+                                                    <span aria-hidden="true">😈</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-3-1" role="tooltip">
+                                                        <strong>Matchup problem</strong>
+                                                        <span>Owns the league&#39;s most lopsided qualifying matchup against Billy.</span>
+                                                        <b>Leads 7-2 head-to-head</b>
+                                                    </span>
+                                                </button>
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-3-2" data-achievement-badge>
+                                                    <span aria-hidden="true">💀</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-3-2" role="tooltip">
+                                                        <strong>Public enemy</strong>
+                                                        <span>Has defeated the widest variety of opponents.</span>
+                                                        <b>18 different opponents beaten</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>83% O / 17% D</span>
@@ -377,16 +442,30 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-4"
-                                    data-player-toggle
-                                >
-                                    <span>Billy</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-4"
+                                        data-player-toggle
+                                    >
+                                        <span>Billy</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-4-1" data-achievement-badge>
+                                            <span aria-hidden="true">🐷</span>
+                                            <span class="achievement-tooltip" id="badge-4-1" role="tooltip">
+                                                <strong>Ball hog</strong>
+                                                <span>Most games played this season.</span>
+                                                <b>30 games • 37% of league play</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">313.7</td>
                         </tr>
@@ -396,12 +475,18 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
-                                            <div class="ball-hog-badge" aria-label="Ball Hog designation">
-                                                <strong>🐷 Ball Hog</strong>
-                                                <span>30 games · league average 9.6</span>
-                                            </div>
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-4-1" data-achievement-badge>
+                                                    <span aria-hidden="true">🐷</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-4-1" role="tooltip">
+                                                        <strong>Ball hog</strong>
+                                                        <span>Most games played this season.</span>
+                                                        <b>30 games • 37% of league play</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>30% O / 70% D</span>
@@ -477,16 +562,48 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-5"
-                                    data-player-toggle
-                                >
-                                    <span>Zain (TZ)</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-5"
+                                        data-player-toggle
+                                    >
+                                        <span>Zain (TZ)</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-5-1" data-achievement-badge>
+                                            <span aria-hidden="true">👑</span>
+                                            <span class="achievement-tooltip" id="badge-5-1" role="tooltip">
+                                                <strong>King of the table</strong>
+                                                <span>Highest win percentage among qualified players.</span>
+                                                <b>75% win rate • minimum 8 games</b>
+                                            </span>
+                                        </button>
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-5-2" data-achievement-badge>
+                                            <span aria-hidden="true">🔥</span>
+                                            <span class="achievement-tooltip" id="badge-5-2" role="tooltip">
+                                                <strong>Hot hand</strong>
+                                                <span>Current league-best winning streak.</span>
+                                                <b>5 straight wins</b>
+                                            </span>
+                                        </button>
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-5-3" data-achievement-badge>
+                                            <span aria-hidden="true">🐐</span>
+                                            <span class="achievement-tooltip" id="badge-5-3" role="tooltip">
+                                                <strong>Giant killer</strong>
+                                                <span>Most wins against currently higher-ranked opponents.</span>
+                                                <b>13 upset wins</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">301.1</td>
                         </tr>
@@ -496,7 +613,36 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-5-1" data-achievement-badge>
+                                                    <span aria-hidden="true">👑</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-5-1" role="tooltip">
+                                                        <strong>King of the table</strong>
+                                                        <span>Highest win percentage among qualified players.</span>
+                                                        <b>75% win rate • minimum 8 games</b>
+                                                    </span>
+                                                </button>
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-5-2" data-achievement-badge>
+                                                    <span aria-hidden="true">🔥</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-5-2" role="tooltip">
+                                                        <strong>Hot hand</strong>
+                                                        <span>Current league-best winning streak.</span>
+                                                        <b>5 straight wins</b>
+                                                    </span>
+                                                </button>
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-5-3" data-achievement-badge>
+                                                    <span aria-hidden="true">🐐</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-5-3" role="tooltip">
+                                                        <strong>Giant killer</strong>
+                                                        <span>Most wins against currently higher-ranked opponents.</span>
+                                                        <b>13 upset wins</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>15% O / 85% D</span>
@@ -572,16 +718,39 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-6"
-                                    data-player-toggle
-                                >
-                                    <span>Michael V</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-6"
+                                        data-player-toggle
+                                    >
+                                        <span>Michael V</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-6-1" data-achievement-badge>
+                                            <span aria-hidden="true">🤝</span>
+                                            <span class="achievement-tooltip" id="badge-6-1" role="tooltip">
+                                                <strong>Dynamic duo</strong>
+                                                <span>Part of the league&#39;s strongest qualifying partnership with Zain (TZ).</span>
+                                                <b>6-2 together</b>
+                                            </span>
+                                        </button>
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-6-2" data-achievement-badge>
+                                            <span aria-hidden="true">🧹</span>
+                                            <span class="achievement-tooltip" id="badge-6-2" role="tooltip">
+                                                <strong>No mercy</strong>
+                                                <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                <b>Largest result: 10-0</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">229.8</td>
                         </tr>
@@ -591,12 +760,27 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
-                                            <div class="ball-hog-badge" aria-label="Ball Hog designation">
-                                                <strong>🐷 Ball Hog</strong>
-                                                <span>29 games · league average 9.6</span>
-                                            </div>
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-6-1" data-achievement-badge>
+                                                    <span aria-hidden="true">🤝</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-6-1" role="tooltip">
+                                                        <strong>Dynamic duo</strong>
+                                                        <span>Part of the league&#39;s strongest qualifying partnership with Zain (TZ).</span>
+                                                        <b>6-2 together</b>
+                                                    </span>
+                                                </button>
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-6-2" data-achievement-badge>
+                                                    <span aria-hidden="true">🧹</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-6-2" role="tooltip">
+                                                        <strong>No mercy</strong>
+                                                        <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                        <b>Largest result: 10-0</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>86% O / 14% D</span>
@@ -653,7 +837,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <blockquote>“Michael V is a BALL HOG with 29 games; the active-player league average is 9.6 and the threshold is 27.1. The ball has started holding court on its own while watching this performance.”</blockquote>
+                                    <blockquote>“The BALL HOG badge fits: 29 games while the league averages 9.6.”</blockquote>
                                 </div>
                             </td>
                         </tr>
@@ -672,16 +856,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-7"
-                                    data-player-toggle
-                                >
-                                    <span>James</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-7"
+                                        data-player-toggle
+                                    >
+                                        <span>James</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">151.2</td>
                         </tr>
@@ -691,7 +880,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>12% O / 88% D</span>
@@ -748,7 +939,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <blockquote>“James&#39;s best partner is Daniel, with a 3-0 record. That duo makes the study group coffee look suspiciously like a reward ceremony.”</blockquote>
+                                    <blockquote>“Losing margins average 5.1 goals. Room for a less dramatic sequel.”</blockquote>
                                 </div>
                             </td>
                         </tr>
@@ -767,16 +958,30 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-8"
-                                    data-player-toggle
-                                >
-                                    <span>Gabby L</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-8"
+                                        data-player-toggle
+                                    >
+                                        <span>Gabby L</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-8-1" data-achievement-badge>
+                                            <span aria-hidden="true">📈</span>
+                                            <span class="achievement-tooltip" id="badge-8-1" role="tooltip">
+                                                <strong>Most improved</strong>
+                                                <span>Largest positive ranking movement in retained season history.</span>
+                                                <b>Up 11 positions</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">142.9</td>
                         </tr>
@@ -786,7 +991,18 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-8-1" data-achievement-badge>
+                                                    <span aria-hidden="true">📈</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-8-1" role="tooltip">
+                                                        <strong>Most improved</strong>
+                                                        <span>Largest positive ranking movement in retained season history.</span>
+                                                        <b>Up 11 positions</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>86% O / 14% D</span>
@@ -843,7 +1059,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <blockquote>“Gabby L&#39;s position is Offense: 86% offense and 14% defense. The scoreboards are practically begging for mercy at that offensive rate.”</blockquote>
+                                    <blockquote>“The résumé includes 2 wins by at least seven. Loud work.”</blockquote>
                                 </div>
                             </td>
                         </tr>
@@ -862,16 +1078,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-9"
-                                    data-player-toggle
-                                >
-                                    <span>Emily</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-9"
+                                        data-player-toggle
+                                    >
+                                        <span>Emily</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">127.1</td>
                         </tr>
@@ -881,7 +1102,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>0% O / 100% D</span>
@@ -952,16 +1175,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-10"
-                                    data-player-toggle
-                                >
-                                    <span>Stephanie</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-10"
+                                        data-player-toggle
+                                    >
+                                        <span>Stephanie</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">100.3</td>
                         </tr>
@@ -971,7 +1199,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>50% O / 50% D</span>
@@ -1036,16 +1266,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-11"
-                                    data-player-toggle
-                                >
-                                    <span>Daron</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-11"
+                                        data-player-toggle
+                                    >
+                                        <span>Daron</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">98.1</td>
                         </tr>
@@ -1055,7 +1290,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>0% O / 100% D</span>
@@ -1124,16 +1361,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-12"
-                                    data-player-toggle
-                                >
-                                    <span>Yoona</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-12"
+                                        data-player-toggle
+                                    >
+                                        <span>Yoona</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">87.6</td>
                         </tr>
@@ -1143,7 +1385,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>100% O / 0% D</span>
@@ -1214,16 +1458,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-13"
-                                    data-player-toggle
-                                >
-                                    <span>Donian</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-13"
+                                        data-player-toggle
+                                    >
+                                        <span>Donian</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">86.1</td>
                         </tr>
@@ -1233,7 +1482,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>25% O / 75% D</span>
@@ -1304,16 +1555,30 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-14"
-                                    data-player-toggle
-                                >
-                                    <span>Adam</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-14"
+                                        data-player-toggle
+                                    >
+                                        <span>Adam</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-14-1" data-achievement-badge>
+                                            <span aria-hidden="true">🧹</span>
+                                            <span class="achievement-tooltip" id="badge-14-1" role="tooltip">
+                                                <strong>No mercy</strong>
+                                                <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                <b>Largest result: 10-0</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">84.0</td>
                         </tr>
@@ -1323,7 +1588,18 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-14-1" data-achievement-badge>
+                                                    <span aria-hidden="true">🧹</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-14-1" role="tooltip">
+                                                        <strong>No mercy</strong>
+                                                        <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                        <b>Largest result: 10-0</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>100% O / 0% D</span>
@@ -1394,16 +1670,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-15"
-                                    data-player-toggle
-                                >
-                                    <span>Calum</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-15"
+                                        data-player-toggle
+                                    >
+                                        <span>Calum</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">83.1</td>
                         </tr>
@@ -1413,7 +1694,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>45% O / 55% D</span>
@@ -1484,16 +1767,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-16"
-                                    data-player-toggle
-                                >
-                                    <span>Matthew</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-16"
+                                        data-player-toggle
+                                    >
+                                        <span>Matthew</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">78.7</td>
                         </tr>
@@ -1503,7 +1791,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>67% O / 33% D</span>
@@ -1570,16 +1860,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-17"
-                                    data-player-toggle
-                                >
-                                    <span>Tim</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-17"
+                                        data-player-toggle
+                                    >
+                                        <span>Tim</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">73.0</td>
                         </tr>
@@ -1589,7 +1884,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>50% O / 50% D</span>
@@ -1654,16 +1951,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-18"
-                                    data-player-toggle
-                                >
-                                    <span>Abby</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-18"
+                                        data-player-toggle
+                                    >
+                                        <span>Abby</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">52.3</td>
                         </tr>
@@ -1673,7 +1975,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>20% O / 80% D</span>
@@ -1744,16 +2048,30 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-19"
-                                    data-player-toggle
-                                >
-                                    <span>Thomas</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-19"
+                                        data-player-toggle
+                                    >
+                                        <span>Thomas</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-19-1" data-achievement-badge>
+                                            <span aria-hidden="true">🧹</span>
+                                            <span class="achievement-tooltip" id="badge-19-1" role="tooltip">
+                                                <strong>No mercy</strong>
+                                                <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                <b>Largest result: 10-0</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">46.4</td>
                         </tr>
@@ -1763,7 +2081,18 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-19-1" data-achievement-badge>
+                                                    <span aria-hidden="true">🧹</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-19-1" role="tooltip">
+                                                        <strong>No mercy</strong>
+                                                        <span>Responsible for the season&#39;s largest winning margin.</span>
+                                                        <b>Largest result: 10-0</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>70% O / 30% D</span>
@@ -1834,16 +2163,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-20"
-                                    data-player-toggle
-                                >
-                                    <span>Francesca</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-20"
+                                        data-player-toggle
+                                    >
+                                        <span>Francesca</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">41.0</td>
                         </tr>
@@ -1853,7 +2187,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>100% O / 0% D</span>
@@ -1918,16 +2254,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-21"
-                                    data-player-toggle
-                                >
-                                    <span>Corina</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-21"
+                                        data-player-toggle
+                                    >
+                                        <span>Corina</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">40.9</td>
                         </tr>
@@ -1937,7 +2278,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>50% O / 50% D</span>
@@ -2006,16 +2349,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-22"
-                                    data-player-toggle
-                                >
-                                    <span>Niki</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-22"
+                                        data-player-toggle
+                                    >
+                                        <span>Niki</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">33.3</td>
                         </tr>
@@ -2025,7 +2373,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>100% O / 0% D</span>
@@ -2092,16 +2442,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-23"
-                                    data-player-toggle
-                                >
-                                    <span>Morgan</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-23"
+                                        data-player-toggle
+                                    >
+                                        <span>Morgan</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">31.8</td>
                         </tr>
@@ -2111,7 +2466,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>88% O / 12% D</span>
@@ -2182,16 +2539,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-24"
-                                    data-player-toggle
-                                >
-                                    <span>Meelad</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-24"
+                                        data-player-toggle
+                                    >
+                                        <span>Meelad</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">29.8</td>
                         </tr>
@@ -2201,7 +2563,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>50% O / 50% D</span>
@@ -2272,16 +2636,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-25"
-                                    data-player-toggle
-                                >
-                                    <span>Hamza</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-25"
+                                        data-player-toggle
+                                    >
+                                        <span>Hamza</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">25.6</td>
                         </tr>
@@ -2291,7 +2660,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>73% O / 27% D</span>
@@ -2362,16 +2733,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-26"
-                                    data-player-toggle
-                                >
-                                    <span>Michael Mo</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-26"
+                                        data-player-toggle
+                                    >
+                                        <span>Michael Mo</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">19.6</td>
                         </tr>
@@ -2381,7 +2757,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>50% O / 50% D</span>
@@ -2452,16 +2830,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-27"
-                                    data-player-toggle
-                                >
-                                    <span>Brian</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-27"
+                                        data-player-toggle
+                                    >
+                                        <span>Brian</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">14.0</td>
                         </tr>
@@ -2471,7 +2854,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>75% O / 25% D</span>
@@ -2540,16 +2925,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-28"
-                                    data-player-toggle
-                                >
-                                    <span>Sara</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-28"
+                                        data-player-toggle
+                                    >
+                                        <span>Sara</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">7.4</td>
                         </tr>
@@ -2559,7 +2949,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>0% O / 100% D</span>
@@ -2622,16 +3014,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-29"
-                                    data-player-toggle
-                                >
-                                    <span>Claire</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-29"
+                                        data-player-toggle
+                                    >
+                                        <span>Claire</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">7.3</td>
                         </tr>
@@ -2641,7 +3038,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>0% O / 100% D</span>
@@ -2704,16 +3103,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-30"
-                                    data-player-toggle
-                                >
-                                    <span>Antonia</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-30"
+                                        data-player-toggle
+                                    >
+                                        <span>Antonia</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">5.8</td>
                         </tr>
@@ -2723,7 +3127,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>0% O / 100% D</span>
@@ -2786,16 +3192,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-31"
-                                    data-player-toggle
-                                >
-                                    <span>Paddy</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-31"
+                                        data-player-toggle
+                                    >
+                                        <span>Paddy</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">5.8</td>
                         </tr>
@@ -2805,7 +3216,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>0% O / 100% D</span>
@@ -2868,16 +3281,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-32"
-                                    data-player-toggle
-                                >
-                                    <span>Anthony</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-32"
+                                        data-player-toggle
+                                    >
+                                        <span>Anthony</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">2.3</td>
                         </tr>
@@ -2887,7 +3305,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Defense</strong>
                                                 <span>0% O / 100% D</span>
@@ -2958,16 +3378,30 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-33"
-                                    data-player-toggle
-                                >
-                                    <span>Alannah</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-33"
+                                        data-player-toggle
+                                    >
+                                        <span>Alannah</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                        <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="badge-33-1" data-achievement-badge>
+                                            <span aria-hidden="true">🧊</span>
+                                            <span class="achievement-tooltip" id="badge-33-1" role="tooltip">
+                                                <strong>Ice cold</strong>
+                                                <span>Current league-longest losing streak.</span>
+                                                <b>8 straight losses</b>
+                                            </span>
+                                        </button>
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">0.0</td>
                         </tr>
@@ -2977,7 +3411,18 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                                <button class="achievement-badge" type="button" aria-expanded="false" aria-describedby="profile-badge-33-1" data-achievement-badge>
+                                                    <span aria-hidden="true">🧊</span>
+                                                    <span class="achievement-tooltip" id="profile-badge-33-1" role="tooltip">
+                                                        <strong>Ice cold</strong>
+                                                        <span>Current league-longest losing streak.</span>
+                                                        <b>8 straight losses</b>
+                                                    </span>
+                                                </button>
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Offense</strong>
                                                 <span>78% O / 22% D</span>
@@ -3034,7 +3479,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <blockquote>“Alannah&#39;s busiest day was Sep 17, 2026, with 3 games played that day. The calendar seems to have taken extra breaks for coffee refills.”</blockquote>
+                                    <blockquote>“Just 0 win in the last 5. The film session will be uncomfortable.”</blockquote>
                                 </div>
                             </td>
                         </tr>
@@ -3048,16 +3493,21 @@
                                 </div>
                             </td>
                             <td data-label="Player" class="player-name">
-                                <button
-                                    class="player-toggle"
-                                    type="button"
-                                    aria-expanded="false"
-                                    aria-controls="player-summary-34"
-                                    data-player-toggle
-                                >
-                                    <span>Chris</span>
-                                    <span class="expand-icon" aria-hidden="true"></span>
-                                </button>
+                                <div class="player-name-row">
+                                    <button
+                                        class="player-toggle"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="player-summary-34"
+                                        data-player-toggle
+                                    >
+                                        <span>Chris</span>
+                                        <span class="expand-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <span class="achievement-list" aria-label="Player achievements">
+                                        
+                                    </span>
+                                </div>
                             </td>
                             <td data-label="Points" class="points">0.0</td>
                         </tr>
@@ -3067,7 +3517,9 @@
                                     <div class="summary-title-row">
                                         <p class="summary-eyebrow">Season at a glance</p>
                                         <div class="summary-badges">
-                                            
+                                            <span class="achievement-list achievement-list-profile" aria-label="Player achievements">
+                                                
+                                            </span>
                                             <div class="position-badge">
                                                 <strong>Midfielder</strong>
                                                 <span>50% O / 50% D</span>
@@ -3214,32 +3666,32 @@
             <div class="comment-grid">
                 
                 <article class="comment-card">
-                    <p>Hot hand</p>
-                    <h3>Zane (BZ): 6 straight wins. Losing missed the memo.</h3>
+                    <p>Giant killer</p>
+                    <h3>Hamza just took down #3 Daniel. Rankings are apparently suggestions.</h3>
                     <span class="comment-number" aria-hidden="true">01</span>
                 </article>
                 
                 <article class="comment-card">
-                    <p>No mercy</p>
-                    <h3>Michael V and Thomas delivered the biggest blowout: 10-0.</h3>
+                    <p>Ice cold</p>
+                    <h3>Alannah has dropped 8 straight. The table has been unkind.</h3>
                     <span class="comment-number" aria-hidden="true">02</span>
                 </article>
                 
                 <article class="comment-card">
-                    <p>Dynamic duo</p>
-                    <h3>Daniel and James: 3-0 together. Group project approved.</h3>
+                    <p>No mercy</p>
+                    <h3>Gabby L and Billy delivered a 10-2 statement. Mercy was unavailable.</h3>
                     <span class="comment-number" aria-hidden="true">03</span>
                 </article>
                 
                 <article class="comment-card">
-                    <p>Matchup problem</p>
-                    <h3>Daniel leads Billy 7-2. Matchup problem confirmed.</h3>
+                    <p>Giant killer</p>
+                    <h3>Abby just took down #9 Emily. Rankings are apparently suggestions.</h3>
                     <span class="comment-number" aria-hidden="true">04</span>
                 </article>
                 
                 <article class="comment-card">
-                    <p>Cardiac club</p>
-                    <h3>16 games ended 10-9. Deep breaths.</h3>
+                    <p>On the move</p>
+                    <h3>Daniel has jumped 6 spots after a 1-5 recent run.</h3>
                     <span class="comment-number" aria-hidden="true">05</span>
                 </article>
                 

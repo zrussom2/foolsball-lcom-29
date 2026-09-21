@@ -604,6 +604,12 @@ tbody tr:hover {
     font-weight: 600;
 }
 
+.player-name-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
 .player-toggle {
     display: inline-flex;
     align-items: center;
@@ -615,6 +621,85 @@ tbody tr:hover {
     font: inherit;
     font-weight: inherit;
     cursor: pointer;
+}
+
+.achievement-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.achievement-badge {
+    position: relative;
+    display: inline-grid;
+    width: 25px;
+    height: 25px;
+    place-items: center;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1;
+    background: transparent;
+    border: 0;
+    border-radius: 3px;
+    cursor: help;
+}
+
+.achievement-badge:hover,
+.achievement-badge:focus-visible,
+.achievement-badge[aria-expanded="true"] {
+    background: rgba(230, 173, 47, 0.2);
+    outline: 1px solid var(--gold);
+}
+
+.achievement-tooltip {
+    position: absolute;
+    z-index: 20;
+    bottom: calc(100% + 9px);
+    left: 50%;
+    display: none;
+    width: min(250px, calc(100vw - 32px));
+    padding: 12px 14px;
+    color: #fffaf0;
+    text-align: left;
+    background: var(--green);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    box-shadow: 0 8px 22px rgba(9, 27, 20, 0.25);
+    transform: translateX(-50%);
+}
+
+.achievement-tooltip strong,
+.achievement-tooltip span,
+.achievement-tooltip b {
+    display: block;
+}
+
+.achievement-tooltip strong {
+    margin-bottom: 5px;
+    color: var(--gold);
+    font-family: "Archivo Black", sans-serif;
+    font-size: 0.78rem;
+}
+
+.achievement-tooltip span,
+.achievement-tooltip b {
+    font-size: 0.72rem;
+    line-height: 1.35;
+}
+
+.achievement-tooltip b {
+    margin-top: 5px;
+    color: white;
+}
+
+.achievement-badge:hover .achievement-tooltip,
+.achievement-badge:focus-visible .achievement-tooltip,
+.achievement-badge[aria-expanded="true"] .achievement-tooltip {
+    display: block;
+}
+
+.achievement-list-profile .achievement-badge {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .player-toggle span:first-child {
@@ -1140,6 +1225,21 @@ footer p {
 
     .summary-badges {
         justify-content: flex-start;
+    }
+
+    .player-name-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .achievement-tooltip {
+        position: fixed;
+        right: 16px;
+        bottom: 18px;
+        left: 16px;
+        width: auto;
+        transform: none;
     }
 
     .ball-hog-badge {

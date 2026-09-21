@@ -30,6 +30,27 @@ toggles.forEach((toggle) => {
     });
 });
 
+const achievementBadges = document.querySelectorAll("[data-achievement-badge]");
+
+function closeAchievementBadges(except = null) {
+    achievementBadges.forEach((badge) => {
+        if (badge !== except) {
+            badge.setAttribute("aria-expanded", "false");
+        }
+    });
+}
+
+achievementBadges.forEach((badge) => {
+    badge.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const willOpen = badge.getAttribute("aria-expanded") !== "true";
+        closeAchievementBadges(badge);
+        badge.setAttribute("aria-expanded", String(willOpen));
+    });
+});
+
+document.addEventListener("click", () => closeAchievementBadges());
+
 const donutDrawer = document.querySelector("[data-donut-drawer]");
 const donutToggle = document.querySelector("[data-donut-toggle]");
 const donutClose = document.querySelector("[data-donut-close]");
@@ -51,6 +72,9 @@ donutClose.addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeAchievementBadges();
+    }
     if (event.key === "Escape" && donutToggle.getAttribute("aria-expanded") === "true") {
         setDonutDrawer(false);
         donutToggle.focus();
