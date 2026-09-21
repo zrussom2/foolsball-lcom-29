@@ -679,6 +679,7 @@ tbody tr:hover {
     color: var(--gold);
     font-family: "Archivo Black", sans-serif;
     font-size: 0.78rem;
+    text-transform: uppercase;
 }
 
 .achievement-tooltip span,
