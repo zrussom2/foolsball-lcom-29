@@ -51,6 +51,84 @@ achievementBadges.forEach((badge) => {
 
 document.addEventListener("click", () => closeAchievementBadges());
 
+const dailyRecap = document.querySelector("[data-daily-recap]");
+
+if (dailyRecap) {
+    const slides = Array.from(dailyRecap.querySelectorAll("[data-recap-slide]"));
+    const tabs = Array.from(dailyRecap.querySelectorAll("[data-recap-tab]"));
+    const viewport = dailyRecap.querySelector("[data-recap-viewport]");
+    let activeSlide = 0;
+    let rotationTimer;
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    function showRecap(index, direction = 1) {
+        const nextIndex = (index + slides.length) % slides.length;
+        dailyRecap.dataset.direction = direction < 0 ? "previous" : "next";
+        slides.forEach((slide, slideIndex) => {
+            const isActive = slideIndex === nextIndex;
+            slide.classList.toggle("is-active", isActive);
+            slide.setAttribute("aria-hidden", String(!isActive));
+        });
+        tabs.forEach((tab, tabIndex) => {
+            const isActive = tabIndex === nextIndex;
+            tab.setAttribute("aria-selected", String(isActive));
+            tab.tabIndex = isActive ? 0 : -1;
+        });
+        activeSlide = nextIndex;
+    }
+
+    function stopRecapRotation() {
+        window.clearInterval(rotationTimer);
+    }
+
+    function startRecapRotation() {
+        stopRecapRotation();
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            rotationTimer = window.setInterval(() => showRecap(activeSlide + 1, 1), 5000);
+        }
+    }
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            showRecap(index, index < activeSlide ? -1 : 1);
+            startRecapRotation();
+        });
+    });
+    dailyRecap.querySelector("[data-recap-previous]").addEventListener("click", () => {
+        showRecap(activeSlide - 1, -1);
+        startRecapRotation();
+    });
+    dailyRecap.querySelector("[data-recap-next]").addEventListener("click", () => {
+        showRecap(activeSlide + 1, 1);
+        startRecapRotation();
+    });
+
+    dailyRecap.addEventListener("mouseenter", stopRecapRotation);
+    dailyRecap.addEventListener("mouseleave", startRecapRotation);
+    dailyRecap.addEventListener("focusin", stopRecapRotation);
+    dailyRecap.addEventListener("focusout", (event) => {
+        if (!dailyRecap.contains(event.relatedTarget)) {
+            startRecapRotation();
+        }
+    });
+    viewport.addEventListener("touchstart", (event) => {
+        touchStartX = event.changedTouches[0].clientX;
+        touchStartY = event.changedTouches[0].clientY;
+        stopRecapRotation();
+    }, { passive: true });
+    viewport.addEventListener("touchend", (event) => {
+        const distanceX = event.changedTouches[0].clientX - touchStartX;
+        const distanceY = event.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(distanceX) > 42 && Math.abs(distanceX) > Math.abs(distanceY)) {
+            showRecap(activeSlide + (distanceX < 0 ? 1 : -1), distanceX < 0 ? 1 : -1);
+        }
+        startRecapRotation();
+    }, { passive: true });
+
+    startRecapRotation();
+}
+
 const donutDrawer = document.querySelector("[data-donut-drawer]");
 const donutToggle = document.querySelector("[data-donut-toggle]");
 const donutClose = document.querySelector("[data-donut-close]");
