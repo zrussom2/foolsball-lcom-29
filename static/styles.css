@@ -907,6 +907,11 @@ tbody tr:hover {
     transform: translateX(-50%);
 }
 
+.standing-row:first-child .achievement-tooltip {
+    top: calc(100% + 9px);
+    bottom: auto;
+}
+
 .achievement-tooltip strong,
 .achievement-tooltip span,
 .achievement-tooltip b {
