@@ -59,7 +59,7 @@ body {
 
 .scoreboard-header {
     position: relative;
-    min-height: 260px;
+    min-height: 340px;
     overflow: hidden;
     color: white;
     background: var(--green);
@@ -103,7 +103,7 @@ footer {
 .header-content {
     position: relative;
     z-index: 1;
-    min-height: 260px;
+    min-height: 340px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,11 +180,89 @@ h1 span {
     color: var(--gold);
 }
 
+.header-side {
+    width: min(560px, 56vw);
+    padding-block: 24px;
+}
+
+.yesterday-report {
+    background: rgba(0, 0, 0, 0.22);
+    border-top: 4px solid var(--gold);
+}
+
+.yesterday-report header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 16px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.yesterday-report header p,
+.yesterday-report header h2 {
+    margin: 0;
+}
+
+.yesterday-report header p,
+.yesterday-report header time,
+.yesterday-grid span {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.yesterday-report header h2 {
+    margin-top: 3px;
+    font-size: 1.05rem;
+    line-height: 1.1;
+}
+
+.yesterday-report header time {
+    color: var(--gold);
+    white-space: nowrap;
+}
+
+.yesterday-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.yesterday-grid > div {
+    min-width: 0;
+    padding: 11px 16px 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.yesterday-grid > div:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.yesterday-grid > div:nth-last-child(-n + 2) {
+    border-bottom: 0;
+}
+
+.yesterday-grid span,
+.yesterday-grid strong {
+    display: block;
+}
+
+.yesterday-grid strong {
+    margin-top: 3px;
+    overflow-wrap: anywhere;
+    font-size: 0.77rem;
+    line-height: 1.35;
+}
+
 .update-status {
     display: flex;
     align-items: center;
     gap: 11px;
     min-width: 220px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: auto;
     padding: 14px 17px;
     background: rgba(0, 0, 0, 0.2);
     border-left: 3px solid var(--gold);
@@ -966,6 +1044,26 @@ footer p {
         flex-direction: column;
         justify-content: center;
         gap: 26px;
+    }
+
+    .header-side {
+        width: 100%;
+        padding-block: 0;
+    }
+
+    .yesterday-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .yesterday-grid > div,
+    .yesterday-grid > div:nth-child(odd),
+    .yesterday-grid > div:nth-last-child(-n + 2) {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .yesterday-grid > div:last-child {
+        border-bottom: 0;
     }
 
     .brand-lockup {
