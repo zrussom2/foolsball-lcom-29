@@ -1,0 +1,62 @@
+name: Force Website Update
+run-name: Force update requested by @${{ github.actor }}
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: foolsball-force-update
+  cancel-in-progress: false
+
+jobs:
+  authorize:
+    name: Verify administrator
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require repository owner
+        shell: bash
+        run: |
+          if [ "${{ github.actor }}" != "${{ github.repository_owner }}" ]; then
+            echo "Only the repository owner may force an update."
+            exit 1
+          fi
+
+  update:
+    name: Refresh workbook and publish
+    needs: authorize
+    environment: foolsball-admin
+    runs-on: [self-hosted, Windows, X64, foolsball]
+    timeout-minutes: 30
+    env:
+      PROJECT_ROOT: ${{ vars.FOOLSBALL_PROJECT_ROOT }}
+    steps:
+      - name: Validate runner configuration
+        shell: powershell
+        run: |
+          if (-not $env:PROJECT_ROOT) {
+            throw "Set the FOOLSBALL_PROJECT_ROOT repository variable."
+          }
+          $runner = Join-Path $env:PROJECT_ROOT "run_scheduled_update.ps1"
+          if (-not (Test-Path $runner)) {
+            throw "FOOLSBALL_PROJECT_ROOT does not contain run_scheduled_update.ps1."
+          }
+
+      - name: Run complete nightly update
+        shell: powershell
+        run: |
+          & (Join-Path $env:PROJECT_ROOT "run_scheduled_update.ps1") -Nightly
+          if ($LASTEXITCODE -ne 0) {
+            throw "FOOLSball update failed with exit code $LASTEXITCODE."
+          }
+
+      - name: Report publication timestamp
+        if: success()
+        shell: powershell
+        run: |
+          $metadataPath = Join-Path $env:PROJECT_ROOT "data\update_metadata.json"
+          $metadata = Get-Content $metadataPath -Raw | ConvertFrom-Json
+          "### Website update complete" >> $env:GITHUB_STEP_SUMMARY
+          "Published workbook timestamp: ``$($metadata.updated_at)``" >> $env:GITHUB_STEP_SUMMARY

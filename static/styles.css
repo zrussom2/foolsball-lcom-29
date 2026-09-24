@@ -1363,6 +1363,18 @@ footer p {
     margin: 0;
 }
 
+.admin-update-link {
+    color: var(--gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.admin-update-link:hover,
+.admin-update-link:focus-visible {
+    color: white;
+}
+
 @media (max-width: 700px) {
     .scoreboard-header,
     .header-content {
